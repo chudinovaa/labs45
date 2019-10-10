@@ -8,6 +8,7 @@ include_directories(${CMAKE_SOURCE_DIR})
 add_subdirectory(src)
 
 enable_testing()
+find_package(Git REQUIRED)
 include(cmake_macros/load_gtest.cmake)
 find_package(Threads REQUIRED)
 add_subdirectory(test)
